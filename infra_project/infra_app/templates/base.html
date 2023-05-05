@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+</head>
+<body>
+    <header>
+        {% block header %}
+            <!-- Default header content or nothing -->
+        {% endblock %}
+    </header>
+
+    <div id="content">
+        {% block content %}
+            <!-- Default content or nothing -->
+        {% endblock %}
+    </div>
+
+    <footer>
+        {% block footer %}
+            <!-- Default footer content or nothing -->
+        {% endblock %}
+    </footer>
+</body>
+</html>
