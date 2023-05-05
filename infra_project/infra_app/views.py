@@ -1,9 +1,7 @@
-from django.http import HttpResponse
-
+from django.shortcuts import render
 
 def index(request):
-    return HttpResponse('У меня получилось!')
-
+    return render(request, 'index.html', context={'title': 'У меня получилось!'})
 
 def second_page(request):
-    return HttpResponse('А это вторая страница')
+    return render(request, 'second_page.html', context={'title': 'А это вторая страница'})
