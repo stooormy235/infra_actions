@@ -6,4 +6,4 @@ def index(request):
 
 
 def second_page(request):
-    return render(request, 'second_page.html') # Вторая страница
+    return render(request, 'second_page.html')
